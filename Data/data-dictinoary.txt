@@ -1,0 +1,85 @@
+url_length: Length of the URL
+hostname_length: Length of the hostname
+ip: IP address
+total_of.: Total count of .
+total_of-: Total count of -
+total_of@: Total count of @
+total_of?: Total count of ?
+total_of&: Total count of &
+total_of=: Total count of =
+total_of_: Total count of _
+total_of~: Total count of ~
+total_of%: Total count of %
+total_of/: Total count of /
+total_of*: Total count of *
+total_of:: Total count of :
+total_of,: Total count of ,
+total_of;: Total count of ;
+total_of$: Total count of $
+total_of_www: Total count of "www" in the domain
+total_of_com: Total count of ".com" in the domain
+total_of_http_in_path: Total count of "http" in the URL path
+https_token: Presence of "https" token
+ratio_digits_url: Ratio of digits in the URL
+ratio_digits_host: Ratio of digits in the hostname
+punycode: Presence of punycode encoding
+port: Port number
+tld_in_path: Top-level domain in the URL path
+tld_in_subdomain: Top-level domain in the subdomain
+abnormal_subdomain: Presence of abnormal subdomain
+nb_subdomains: Number of subdomains
+prefix_suffix: Presence of prefix or suffix in the domain
+random_domain: Presence of random characters in the domain
+shortening_service: Presence of URL shortening service
+path_extension: Presence of file path extension
+nb_redirection: Number of redirections
+nb_external_redirection: Number of external redirections
+length_words_raw: Length of words in the URL
+char_repeat: Presence of repeated characters in the URL
+shortest_words_raw: Length of shortest words in the URL
+shortest_word_host: Length of shortest word in the hostname
+shortest_word_path: Length of shortest word in the URL path
+longest_words_raw: Length of longest words in the URL
+longest_word_host: Length of longest word in the hostname
+longest_word_path: Length of longest word in the URL path
+avg_words_raw: Average length of words in the URL
+avg_word_host: Average length of words in the hostname
+avg_word_path: Average length of words in the URL path
+phish_hints: Presence of phishing hints
+domain_in_brand: Presence of domain in brand name
+brand_in_subdomain: Presence of brand name in subdomain
+brand_in_path: Presence of brand name in URL path
+suspecious_tld: Presence of suspicious top-level domain
+statistical_report: Presence of statistical report
+nb_hyperlinks: Number of hyperlinks
+ratio_intHyperlinks: Ratio of internal hyperlinks
+ratio_extHyperlinks: Ratio of external hyperlinks
+ratio_nullHyperlinks: Ratio of null hyperlinks
+nb_extCSS: Number of external CSS files
+ratio_intRedirection: Ratio of internal redirections
+ratio_extRedirection: Ratio of external redirections
+ratio_intErrors: Ratio of internal errors
+ratio_extErrors: Ratio of external errors
+login_form: Presence of login form
+external_favicon: Presence of external favicon
+links_in_tags: Presence of links in tags
+submit_email: Presence of email submission form
+ratio_intMedia: Ratio of internal media
+ratio_extMedia: Ratio of external media
+sfh: Presence of "submit" form handler
+iframe: Presence of iframe
+popup_window: Presence of popup window
+safe_anchor: Presence of safe anchor
+onmouseover: Presence of onmouseover event
+right_clic: Presence of right click
+empty_title: Presence of empty title
+domain_in_title: Presence of domain in title
+domain_with_copyright: Presence of copyright symbol in domain
+whois_registered_domain: Presence of registered domain in whois
+domain_registration_length: Length of domain registration
+domain_age: Age of the domain
+web_traffic: Web traffic
+dns_record: Presence of DNS record
+google_index: Google index status
+page_rank: Page rank
+status: Status of the URL
