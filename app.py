@@ -47,27 +47,27 @@ from bs4 import BeautifulSoup
 # Defining Features
 
 selected_features = [
-    'ip',
-    'https_token',
-    'domain_with_copyright',
     'google_index',
-    'page_rank',
-    'url_length',
-    'total_of_www',
-    'punycode',
-    'phish_hints',
-    'total_of.',
-    'total_of?',
-    'total_of=',
-    'total_of/',
     'ratio_digits_url',
+    'domain_with_copyright',
+    'url_length',
+    'total_of=',
     'hostname_length',
-    'total_of_com',
-    'shortening_service'
+    'total_of/',
+    'page_rank',
+    'total_of_www',
+    'total_of?',
+    'total_of&',
+    'total_of.',
+    'https_token',
+    'shortening_service',
+    'ip',
+    'punycode',
+    'phish_hints'
 ]
 
 # Load the model
-model_path = "model_AI_detector-I2.pkl"
+model_path = "model_AI_detector3.&-I2.pkl"
 model = joblib.load(open(model_path, 'rb'))
 print("Model loaded successfully", model)
 # Functions for extracting features from URL
@@ -187,6 +187,12 @@ def shortening_service(full_url):
     else:
         return 0
 
+def check_com(words_raw):
+        count = 0
+        for word in words_raw:
+            if not word.find('com') == -1:
+                count += 1
+        return count
 
 # Preprocess URL and extract features
 def process_url(full_url):
@@ -215,7 +221,7 @@ def process_url(full_url):
         features['total_of/'] = total_of_slash(full_url)
         features['ratio_digits_url'] = ratio_digits(hostname)
         features['hostname_length'] = len(hostname)
-        features['total_of_com'] = total_and(full_url)
+        features['total_of&'] = total_and(full_url)
         features['shortening_service'] = shortening_service(full_url)
 
     df_inputs = pd.DataFrame([features], columns=selected_features)
