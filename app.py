@@ -8,7 +8,8 @@ from bs4 import BeautifulSoup
 # Read before running the script!
 
 # Step 1: Install Required Libraries
-# If you haven't installed the required libraries yet, please follow these instructions:
+# If you haven't installed the required libraries yet (should give you a warning for importing those undownloaded libaries)
+# Please follow these instructions:
 # Open your terminal or command prompt and run the following commands:
 
 # For joblib (run the command below in the terminal)
