@@ -169,12 +169,8 @@ def total_of_slash(full_url):
 def ratio_digits(hostname):
     return len(re.sub("[^0-9]", "", hostname))/len(hostname)
 
-def check_com(words_raw):
-    count = 0
-    for word in words_raw:
-        if not word.find('com') == -1:
-            count += 1
-    return count
+def total_and(full_url):
+    return full_url.count('&')
 
 def shortening_service(full_url):
     match = re.search('bit\.ly|goo\.gl|shorte\.st|go2l\.ink|x\.co|ow\.ly|t\.co|tinyurl|tr\.im|is\.gd|cli\.gs|'
@@ -219,7 +215,7 @@ def process_url(full_url):
         features['total_of/'] = total_of_slash(full_url)
         features['ratio_digits_url'] = ratio_digits(hostname)
         features['hostname_length'] = len(hostname)
-        features['total_of_com'] = check_com(path)
+        features['total_of_com'] = total_and(full_url)
         features['shortening_service'] = shortening_service(full_url)
 
     df_inputs = pd.DataFrame([features], columns=selected_features)
